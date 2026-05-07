@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="portfoentry.css">
+    <link rel="icon" type="image/png" href="images/Monogram.png">
+
+    <title>Signs of Forest</title>
+</head>
+<body>
+    <!-- Section 1: Quick Info -->
+     <div class="portcontent" id="qkinfo">
+        <img src="images/SoF Cover.png" alt="Cover art of Other Half with an underground castle">
+        <h3>Quick Info</h3>
+        <a href="https://denboro.itch.io/signs-of-forest" target="_blank">Click to play on Itch.io</a>
+        <p>Platform: Windows</p>
+        <p>Duration: 48 hours</p>
+        <p>Team Size: 5</p>
+        <p>Role:</p>
+        <ul>
+            <li>Level Designer</li>
+            <li>Puzzle Designer</li>
+            <li>Lead Audio</li>
+        </ul>
+     </div>
+
+     <!-- Section 2: The Design Content -->
+      <div class="portcontent" id="designcontent">
+        <h1>Signs of Forest</h1>
+        <video width="640" height="360" autoplay muted controls>
+            <source src="videos/Signs of Forest.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Subsection 1: Overview -->
+         <h2>Overview</h2>
+         <p>Signs of Forest is a top-down action adventure game submitted for the 2026 Global Game Jam. 
+            My four friends and I took the challenge of creating a game in 48 hours centered around the theme “mask.”</p>
+         <p>In Signs of Forest, you play as Kachau, a warrior of a tribe, who must retrieve the three ancient Beast Masks 
+            to save the planet from dying. Each of the Beast Masks has their own unique ability to help the player in 
+            their journey. I was responsible for the level design, puzzle design, as well as music and sound effects.</p>
+         <p>Despite the game being riddled with bugs, this was a great opportunity for all of us to learn about scope.
+            In the future, my friends and I agreed that for the next game jam, we will focus on having one exceptionally
+            explored mechanic rather than multiple. Additionally, we agreed that a narrative should only be developed if the
+            game jam goes on for a full week, at least.
+         </p>
+        
+        <!-- Subsection 2: Design -->
+         <h2>Design</h2>
+         <p>For the game jam, I focused my attention on creating the level design layout as well as designing the puzzles 
+            of the second temple. Because our game was heavily inspired by the HM mechanics found in Pokemon, I designed 
+            the puzzles so that they seemed like they could easily exist in an old Pokemon game.</p>
+         <div class="gallery">
+            <img src="images/SoF Hub.jpeg" alt="Signs of Forest's hub concept">
+            <img src="images/SoF Puzzle Concept.jpeg" alt="Puzzle concept sketch for eagle temple">
+            <img src="images/SoF Dungeon Level Design.jpeg" alt="Level design concept of the bear and eagle temple" id="doublecolumn">
+         </div>
+
+        
+        <!-- Subsection 3: Audio -->
+         <h2>Audio</h2>
+         <p>When making the music for Signs of Forest, I focused on creating a song that is played everywhere in the 
+            game’s level, but its instruments and structure slightly change based on the environment that the player 
+            is in. Because of that, the overworld, bear temple, eagle temple, and serpent temple theme are all nearly 
+            identical, aside from some changes to the chord progressions and melodies.</p>
+         <div class="music">
+            <h3>Overworld</h3>
+            <audio controls>
+                <source src="music/HUB theme.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <div class="music">
+            <h3>Bear Temple</h3>
+            <audio controls>
+                <source src="music/Bear Temple theme.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <div class="music">
+            <h3>Eagle Temple</h3>
+            <audio controls>
+                <source src="music/Eagle Temple theme.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <div class="music">
+            <h3>Serpent Temple</h3>
+            <audio controls>
+                <source src="music/Serpent Temple theme.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <p>After creating the four themes, I quickly created a main menu theme. Inspired by 
+            <a href="https://www.youtube.com/watch?v=PibYmujLubI" target="_blank">Deltarune’s “The Legend”</a>, I wanted the main menu theme to feel like it’s 
+            telling a melancholic story to the player.</p>
+         <div class="music">
+            <h3>Main Menu</h3>
+            <audio controls>
+                <source src="music/menu.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <p>Sound effects were created following similar methods used by sound designers during the 16-bit era. For 
+            example, the dash sound effect is simply a white noise with a pitch shifter and delay.
+         </p>
+         <div class="music" id="ending">
+            <h3>Dash</h3>
+            <audio controls>
+                <source src = "sfx/SoF_dash.wav" type="audio/wav">
+            </audio>
+         </div>
+      </div>
+
+      <!-- Section 3: The Exit Button -->
+      <div class="portcontent" id="exitbutton">
+         <a href="index.html">
+            <i class="fa-solid fa-xmark"></i>
+         </a>
+      </div>
+</body>
+</html>

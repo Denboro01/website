@@ -1,0 +1,258 @@
+:root {
+    --text-color: #0d0d0d;
+    --link-color: #0d0d0d;
+    --background-color: #C9DBFF;
+    --border-color: #FFFFFF;
+    --content-background-color: #C6D9F2;
+    --column-variable: 2;
+    --bottomscreen-color: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.041666667vw;
+}
+
+body {
+    font-family: 'Gamja Flower', sans-serif;
+    font-weight: 400;
+    background-color: var(--background-color);
+    background-image: url('images/Background_Image.png');
+    background-size: 100vw;
+
+    /* Center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 100%;
+    margin-top: 5.1vh;
+}
+
+h1, h2, p, ul, h3, a {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p, a, ul {
+    font-size: 1rem;
+}
+
+
+/* CSS for Game Art */
+#gameart {
+    border-radius: 1.5625vw;
+    height: 20vw;
+
+    /* Setting the animation */
+    animation-name: screenfloat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes screenfloat {
+    50% {
+        transform: translate(0, -3px);
+    }
+}
+
+
+
+/* CSS for Interact Screen*/
+.interactscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    /* Setting the Color */
+    background-color: var(--bottomscreen-color);
+
+    /* Setting the position */
+    position: fixed;
+    bottom: 0;
+
+    /* Setting the size */
+    width: 53vw;
+    height: 24vw;
+
+    /* Setting the corner radius */
+    border-radius: 1.041666667vw 1.041666667vw 0 0;
+
+    box-shadow: 0 0 3vw 0 rgb(116, 116, 116);
+}
+
+
+
+/* CSS for Navigation Bar */
+nav {
+    display: flex;
+    gap: 2vw;
+
+    /* Setting position */
+    margin-top: 1.5vw;
+}
+
+
+
+/* CSS for External Webpages */
+.extpage {
+    /* Setting the color */
+    background-color: var(--content-background-color);
+
+    /* Setting the border */
+    outline: var(--border-color) solid 0.3vw;
+    border-radius: 0.25vw;
+
+    /* Setting the size */
+    height: 3vw;
+    width: 3vw;
+
+    /* Rotate the icons */
+    rotate: -10deg;
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-play-state: running;
+}
+
+.extpage img {
+    height: 3vw;
+}
+
+.extpage:hover {
+    animation-play-state: paused;
+}
+
+/* Animation for ExtPages */
+@keyframes shake{
+    0%{
+        rotate: -10deg;
+    }
+    10% {
+        rotate: 5deg;
+    }
+    24%{
+        rotate: 5deg;
+    }
+    25%{
+        rotate: -15deg;
+    }
+    30% {
+        rotate: -5deg;
+    }
+    35% {
+        rotate: -15deg;
+    }
+    40%{
+        rotate: -5deg;
+    }
+    45% {
+        rotate: -15deg;
+    }
+    50%{
+        rotate: -5deg;
+    }
+    55% {
+        rotate: -15deg;
+    }
+    70%{
+        rotate: -10deg;
+    }
+    100%{
+        rotate: -10deg;
+    }
+}
+
+
+
+/* CSS for Game Title Display */
+.display {
+    background-color: var(--border-color);
+
+    /* Setting the corner radius */
+    border-radius: 1.5625vw;
+
+    /* Setting the size */
+    width: 24.21875vw;
+    height: 6.458333333vw;
+
+    /* Aligning text to center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Setting the animation properties */
+    transform: scale(0);
+
+    box-shadow: 0px 0px 10px 0px rgb(194, 194, 194);
+} 
+
+.display p {
+    font-size: 3rem;
+}
+
+
+
+/* CSS for Game Catalog */
+.catalog {
+    display: flex;
+    gap: 4vw;
+    margin-top: 1vw;
+}
+
+
+/* CSS for Games */
+.game {
+    /* Setting the color */
+    background-color: var(--content-background-color);
+
+    /* Setting the border */
+    outline: var(--border-color) solid 1vw;
+    border-radius: 0.25vw;
+
+    /* Setting the size */
+    height: 5vw;
+    width: 5vw;
+
+    /* Rotate the icons */
+    rotate: -10deg;
+
+    animation-duration: 3s;
+    animation-name: float;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+
+    box-shadow: -2px 10px 10px 20px rgb(194, 194, 194);
+}
+
+.game img {
+    height: 5vw;
+}
+
+.game:hover {
+    animation-play-state: paused;
+}
+
+/* Animation for Cartridges */
+@keyframes float{
+    50% {
+        transform: translate(0.15625vw, -0.5208333333vw);
+    }
+}

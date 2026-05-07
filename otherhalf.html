@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="portfoentry.css">
+    <link rel="icon" type="image/png" href="images/Monogram.png">
+
+    <title>Other Half</title>
+</head>
+<body>
+    <!-- Section 1: Quick Info -->
+     <div class="portcontent" id="qkinfo">
+        <img src="images/Other Half Cover.png" alt="Cover art of Other Half with an underground castle">
+        <h3>Quick Info</h3>
+        <a href="https://denboro.itch.io/other-half" target="_blank">Click to play on Itch.io</a>
+        <a href="pdfs/Other Half GDD.pdf" target="_blank">Click to access GDD</a>
+        <p>Platform: Windows</p>
+        <p>Duration: 5 months</p>
+        <p>Team Size: 5</p>
+        <p>Role:</p>
+        <ul>
+            <li>Level Designer</li>
+            <li>Lead Audio</li>
+            <li>Artist</li>
+            <li>Programmer</li>
+            <li>Cutscene Editor</li>
+        </ul>
+     </div>
+
+     <!-- Section 2: The Design Content -->
+      <div class="portcontent" id="designcontent">
+        <h1>Other Half</h1>
+        <video width="640" height="360" autoplay muted controls>
+            <source src="videos/Other Half Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Subsection 1: Overview -->
+         <h2>Overview</h2>
+         <p>Other Half is a 2d co-op metroidvania where Vesper, a shaman, and N30, a robot, explore a planet’s underground world, 
+            face off against monsters, and unlock abilities to reach the planet's heart and save the world. All while sharing 
+            the same body...</thead></p>
+         <p>Made for a semester project that revolves around the theme “stronger together”, Other Half has 
+            two players controlling the same avatar on the screen, where they will need to coordinate their 
+            actions by working together.</p>
+        
+        <!-- Subsection 2: Design -->
+         <h2>Design</h2>
+         <p>Regarding design, I focused my efforts on level design as well as creating the GDD (can be accessed 
+            via the Quick Info section). The goal for the game’s design was to create an experience that felt intense, 
+            where the players had to think quickly and be efficient with their communication. Another goal was to encourage 
+            off-track play.</p>
+         <p>To facilitate the intense experience, I designed three enemies of varying difficulty to ease players into the 
+            challenges that come with combat. Furthermore, I included disappearing platforms to have players think quickly 
+            when moving.</p>
+         <div class="gallery">
+            <img src="images/goomba.png" alt="Small enemy in Other Half">
+            <img src="images/Chaser.png" alt="Knight-looking enemy in Other Half">
+            <img src="images/Flying Enemy.png" alt="Flying enemy in Other Half">
+            <img src="images/floating platform.png" alt="Timed platform in Other Half">
+         </div>
+         <p>As for off-track play, the level is created with optional routes the player can take where they can discover 
+            secret areas that reward them with lore.</p>
+         <div class="gallery">
+            <img src="images/Sketches.jpg" alt="Original sketch of Other Half's level design">
+            <img src="images/Map of Other Half.png" alt="Final map as seen in Other Half's gameplay">
+            <img src="images/Other Half Level.png" alt="Full look of Other Half's level" id="doublecolumn">
+         </div>
+
+        
+        <!-- Subsection 3: Audio -->
+         <h2>Audio</h2>
+         <p>To enforce the story of two characters from different cultures, each of the two main characters have their own 
+            instrument. Vesper is personified by the flute/clarinet, slightly panned to the left. Meanwhile N30 is 
+            personified by a synth, slightly panned to the right.</p>
+         <p>Furthermore, the goal for the music was to sell this emotion of fantasy, mystery, and otherworldly. Because of 
+            this, I conducted modal mixture, which is when the music shifts from one harmonic mode to another. In the level song, 
+            it transitions between Dorian, Lydian, and Aeolian mode, creating an otherworldly feel to the song.</p>
+         <div class="music">
+            <h3>Main Menu</h3>
+            <audio controls>
+                <source src="music/main menu.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <div class="music">
+            <h3>Cutscene</h3>
+            <audio controls>
+                <source src="music/cutscene.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <div class="music">
+            <h3>Level</h3>
+            <audio controls>
+                <source src="music/The Soil.ogg" type="audio/ogg">
+            </audio>
+         </div>
+         <p>Most of the sound effects were made by recording foleys in my room and post-processing.
+            For example, the dash sound effect was made by swinging a coat hanger.</p>
+         <div class="music">
+            <h3>Dash</h3>
+            <audio controls>
+                <source src = "sfx/dash.wav" type="audio/wav">
+            </audio>
+         </div>
+         <p>Others were made by post-processing my vocals (i.e. the monster’s hit and death sound effects).</p>
+         <div class="music">
+            <h3>Monster hit</h3>
+            <audio controls>
+                <source src = "sfx/enemy hit.wav" type="audio/wav">
+            </audio>
+         </div>
+         <p>Lastly, some sound effects were made by layering instruments, sound effects, as well as modulating speed 
+            (i.e. the “ability unlock” sound effect).</p>
+         <div class="music">
+            <h3>Ability unlock</h3>
+            <audio controls>
+                <source src = "sfx/ability unlocked.wav" type="audio/wav">
+            </audio>
+         </div>
+         <p>This opportunity taught me to embrace spontaneity when it comes to making sound effects as well as 
+            use real life objects to add richness.</p>
+        
+        <!-- Subsection 4: Programming -->
+         <h2>Programming</h2>
+         <p>I was not meant to be a programmer, but I created the game’s base jump script as well as the camera script 
+            that stops camera damping when the player falls. This is to help the player see what’s directly beneath them 
+            while falling and if they need to course correct.</p>
+         <!-- ADD IMAGE OF THE SCRIPT AND ADD A GIF OF THE CAMERA BEHAVIOR -->
+         <div class="gallery">
+            <img src="images/Jump Code.png" alt="Jump Script">
+            <img src="images/Player Jump.gif" alt="Gif of the two different player jumps">
+            <img src="images/Camera Code.png" alt="Camera Script">
+            <img src="images/Camera Script.gif" alt="Camera behavior in the game">
+         </div>
+        
+        <!-- Subsection 5: Art -->
+         <h2>Art</h2>
+         <p>Despite not being an artist, I ended up helping out with making a few props as well as animating. 
+            I created platforms, torches, as well as the breakable walls in the game. This opportunity helped me become 
+            more comfortable in pixel art by not overthinking about how things should look and focusing more on rapid 
+            iterations.</p>
+         <!-- Add images of the sprite and GIFs of the torch -->
+         <div class="gallery">
+            <img src="images/Vines-Sheet.png" alt="Vines">
+            <img src="images/torch.gif" alt="Torch with flame animation">
+            <img src="images/Rock Platform.png" alt="Rock Platform" id="doublecolumn">
+         </div>
+        
+        <!-- Subsection 6: Cutscene Editor -->
+         <h2>Cutscene</h2>
+         <video width="640" height="360" autoplay muted controls>
+            <source src="videos/Cutscene.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+         <p id="ending">When it came to the game's cutscene, I did edits to improve its pacing. I also 
+            implemented the music as well as the script that was made for it. Because the final scene didn't feel dramatic 
+            enough, I made edits to the final scene to sell the idea that the character is dying with camera shake and blur.</p>
+      </div>
+
+      <!-- Section 3: The Exit Button -->
+      <div class="portcontent" id="exitbutton">
+         <a href="index.html">
+            <i class="fa-solid fa-xmark"></i>
+         </a>
+      </div>
+</body>
+</html>

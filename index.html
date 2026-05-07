@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="gamehome.css">
+    <link rel="icon" type="image/png" href="images/Monogram.png">
+    <title>Denis - Game Designer Home Screen</title>
+</head>
+<body>
+    <!-- Section 1: Game Art -->
+     <!-- This section is responsible for showing the art of the game being hovered over -->
+    <img src="images/Standby_Display.png" alt="" id="gameart">
+
+    <!-- Section 2: "Interact Screen" -->
+     <!-- This section is responsible for all the interactable buttons the user can press. -->
+     <!-- The look should be reminiscent of the 3DS -->
+    <div class="interactscreen">
+        <!-- Subsection 1: Navigation Bar -->
+         <!-- This section will be home of other webpages the user can access in the future -->
+         <!-- Other webpages include: Music, About Me, Home, Blog -->
+        <nav>
+            <div class="extpage">
+                <a href="pdfs/CV.pdf" target="_blank"><img src="images/CV_Icon.png" alt=""></a>
+            </div>
+
+            <div class="extpage">
+                <img src="images/Home_Icon.png" alt="">
+            </div>
+
+            <div class="extpage">
+                <img src="images/Music_Icon.png" alt="">
+            </div>
+
+            <div class="extpage">
+                <img src="images/About_Me_Icon.png" alt="">
+            </div>
+
+            <div class="extpage">
+                <img src="images/Blog_Icon.png" alt="">
+            </div>
+        </nav>
+
+        <!-- Subsection 2: Game Title Display -->
+         <!-- This section is responsible for displaying the name of the game that is being hovered over by the user -->
+        <div class="display">
+            <p id="displaytext">Placeholder Text</p>
+        </div>
+        
+        <!-- Subsection 3: The Game Catalog -->
+         <!-- This section is where the player will see a catalog of games that they can interact with and learn more about -->
+         <!-- This is meant to represent the icons you'd find on the 3DS (shoutout nostalgia) -->
+        <div class="catalog">
+            <div class="game" onmouseover="UpdateDisplay(0)">
+                <a href="whoisdenis.html"><img src="images/Denis_Game.png" alt=""></a>
+            </div>
+
+            <div class="game" onmouseover="UpdateDisplay(1)">
+                <a href="fourly.html"><img src="images/Fourly_Game.png" alt=""></a>
+            </div>
+
+            <div class="game" onmouseover="UpdateDisplay(2)">
+                <a href="otherhalf.html"><img src="images/Other_Half_Game.png" alt=""></a>
+            </div>
+
+            <div class="game" onmouseover="UpdateDisplay(3)">
+                <a href="adorabullet.html"><img src="images/Adorabullet_Game.png" alt=""></a>
+            </div>
+
+            <div class="game" onmouseover="UpdateDisplay(4)">
+                <a href="signs_of_forest.html"><img src="images/SoF_Game.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the Javascript file responsible for the behavior -->
+    <script src="script.js"></script>
+</body>
+</html>
