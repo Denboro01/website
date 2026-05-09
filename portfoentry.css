@@ -4,6 +4,7 @@
     --background-color: #C9DBFF;
     --border-color: #FFFFFF;
     --content-background-color: #C6D9F2;
+    --link-background-color: #F299EC;
     --column-variable: 2;
 }
 
@@ -88,6 +89,31 @@ p, a, ul {
 
 img {
     border-radius: 1.67vw;
+}
+
+#qkinfo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--link-background-color);
+    border-radius: 0.7vw;
+    outline: var(--border-color) solid 0.3vw;
+    width: 14vw;
+    height: 2.5vw;
+    transition-duration: 0.1s;
+    transform: scale(1);
+}
+
+#qkinfo a:link{
+    color: var(--link-color);
+}
+
+#qkinfo a:visited{
+    color: var(--link-color);
+}
+
+#qkinfo a:hover {
+    transform: scale(1.1);
 }
 
 
