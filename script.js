@@ -6,6 +6,7 @@ const display = document.getElementsByClassName("display")[0];
 
 // Attempting to fix the delayed image change bug
 const preloadedImages = [];
+
 displayImages.forEach(src => {
     const img = new Image();
     img.src = src;
