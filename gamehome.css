@@ -256,3 +256,63 @@ nav {
         transform: translate(0.15625vw, -0.5208333333vw);
     }
 }
+
+/* Changing dimensions for phone */
+
+@media (max-width: 440px) {
+    body {
+        background-size: 100vh;
+    }
+
+    #gameart {
+        height: 55vw;
+        margin-top: 5vh;
+    }
+
+    nav {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .interactscreen {
+        height: 50vh;
+        width: 90vw;
+
+        /* Setting the corner radius */
+        border-radius: 5vw 5vw 0 0;
+    }
+
+    .extpage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .extpage img {
+        height: 50px;
+    }
+
+    .catalog {
+        overflow: scroll;
+        bottom: 0;
+        height: 200px;
+        width: 85vw;
+        align-items: center;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+
+    .game{
+        height: 100px;
+        width: 100px;
+        outline: var(--border-color) solid 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        box-shadow: -1px 5px 5px 10px rgb(194, 194, 194);
+    }
+
+    .game img {
+        height: 100px;
+    }
+}
