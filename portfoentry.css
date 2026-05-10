@@ -264,6 +264,7 @@ img {
     body {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20vw;
 
         margin-top: 1.5vh;
     }
@@ -275,7 +276,8 @@ img {
 
     /* Change the width of the videos */
     video {
-        width: 72vw;
+        width: 67vw;
+        height: 17vh;
     }
 
     /* Change the outline, border radius, and height of all contents */
@@ -283,7 +285,8 @@ img {
         outline: var(--border-color) solid 3vw;
         border-radius: 11.36363636vw;
 
-        height: 96.23430962vh;
+        height: auto;
+        padding-bottom: 30px;
     }
 
     /* Quick Info changes */
@@ -313,7 +316,7 @@ img {
 
     /* Design Content changes */
     #designcontent {
-        margin-top: 100px; /* Temporary variable, should be changed in the future */
+        margin-top: 40px; /* Temporary variable, should be changed in the future */
         width: 81.81818182vw;
     }
 
@@ -352,7 +355,7 @@ img {
     }
 
     #doublecolumn {
-        width: 72.72727273vw;
+        width: 67vw;
     }
 
     /* Music changes */
