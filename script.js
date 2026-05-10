@@ -16,6 +16,8 @@ displayImages.forEach(src => {
 
 
 function UpdateDisplay(id) {
+    // Check if the id is the same as the previous
+    // If so, then don't run this code
     if (previousAcessed == id) {
         return;
     } else {

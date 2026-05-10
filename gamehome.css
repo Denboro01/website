@@ -315,8 +315,8 @@ nav {
         height: 25vh;
 
         width: 90vw;
-        padding-left: 31vw;
-        padding-right: 31vw;
+        padding-left: 30vw;
+        padding-right: 30vw;
 
         overflow-x: scroll;
 
@@ -330,7 +330,7 @@ nav {
         height: 34vw;
         width: 34vw;
 
-        outline: var(--border-color) solid 2vw;
+        outline: var(--border-color) solid 4vw;
         border-radius: 4vw;
 
         box-shadow: -1vw 2vw 2vw 4vw rgb(194, 194, 194);
