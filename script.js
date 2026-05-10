@@ -6,6 +6,7 @@ const display = document.getElementsByClassName("display")[0];
 
 // Attempting to fix the delayed image change bug
 const preloadedImages = [];
+let previousAcessed;
 
 displayImages.forEach(src => {
     const img = new Image();
@@ -15,11 +16,19 @@ displayImages.forEach(src => {
 
 
 function UpdateDisplay(id) {
+    if (previousAcessed == id) {
+        return;
+    } else {
+        previousAcessed = id;
+    }
+    
     // Change the image of GameArt by using the preloaded images
     gameArt.src = preloadedImages[id].src;
 
     // Change the DisplayText's text
     displayText.innerHTML = gameNames[id];
+
+    PopIn();
 }
 
 function AnimationDelay() {
@@ -28,10 +37,6 @@ function AnimationDelay() {
     // Add a delay to each game to float
     for (var i = 0 ; i < games.length ; i++) {
         games[i].style.animationDelay = String(i) + "s";
-
-        // Add an event listener that triggers the popin for both the gameart and display name
-        games[i].addEventListener("mouseenter", PopIn);
-        games[i].addEventListener("touchstart", PopIn);
     }
 
     let extpages = document.getElementsByClassName('extpage');
