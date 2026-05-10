@@ -267,6 +267,9 @@ img {
         margin-bottom: 10vw;
 
         margin-top: 1.5vh;
+
+        background-size: 200vh;
+        background-attachment: fixed;
     }
 
     /* Change the border radius of images */
