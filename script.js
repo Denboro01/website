@@ -31,6 +31,7 @@ function AnimationDelay() {
 
         // Add an event listener that triggers the popin for both the gameart and display name
         games[i].addEventListener("mouseenter", PopIn);
+        games[i].addEventListener("touchstart", PopIn);
     }
 
     let extpages = document.getElementsByClassName('extpage');

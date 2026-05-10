@@ -261,58 +261,82 @@ nav {
 
 @media (max-width: 440px) {
     body {
-        background-size: 100vh;
+        /* Change the size of the background */
+        background-size: 200vh;
     }
 
     #gameart {
-        height: 55vw;
-        margin-top: 5vh;
-    }
+        /* Change positioning */
+        height: 50vw;
 
-    nav {
-        gap: 15px;
-        margin-top: 30px;
+        /* Change size */
+        border-radius: 10vw;
+        margin-top: 10vh;
     }
 
     .interactscreen {
-        height: 50vh;
+        /* Change size */
         width: 90vw;
+        height: 48vh;
 
-        /* Setting the corner radius */
-        border-radius: 5vw 5vw 0 0;
+        border-radius: 4vw 4vw 0 0;
+    }
+
+    nav {
+        gap: 5vw;
+
+        margin-top: 3vh;
     }
 
     .extpage {
-        width: 50px;
-        height: 50px;
+        height: 10vw;
+        width: 10vw;
+
+        border-radius: 2vw;
+
+        outline: var(--border-color) solid 0.9vw;
     }
 
     .extpage img {
-        height: 50px;
+        height: 10vw;
+    }
+
+    .display {
+        display: none;
     }
 
     .catalog {
-        overflow: scroll;
-        bottom: 0;
-        height: 200px;
-        width: 85vw;
+        display: flex;
         align-items: center;
 
+        margin-top: 6vh;
+
+        gap: 15vw;
+        height: 25vh;
+
+        width: 90vw;
+        padding-left: 31vw;
+        padding-right: 31vw;
+
+        overflow-x: scroll;
+
+        /* Hide the scrollbar */
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;
+
     }
 
-    .game{
-        height: 100px;
-        width: 100px;
-        outline: var(--border-color) solid 10px;
-        margin-left: 25px;
-        margin-right: 25px;
+    .game {
+        height: 34vw;
+        width: 34vw;
 
-        box-shadow: -1px 5px 5px 10px rgb(194, 194, 194);
+        outline: var(--border-color) solid 2vw;
+        border-radius: 4vw;
+
+        box-shadow: -1vw 2vw 2vw 4vw rgb(194, 194, 194);
     }
 
     .game img {
-        height: 100px;
+        height: 34vw;
     }
 }
